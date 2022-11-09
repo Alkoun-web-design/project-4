@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    height: 80px;
+    height: 40px;
 }
 
 section {
@@ -44,7 +44,7 @@ section {
     background-color: var(--objectclr);
     height: 200px;
     width: 200px;
-    border-radius: 2em;
+    border-radius: 25%;
 }
 
 footer {
