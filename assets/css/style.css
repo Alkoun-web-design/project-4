@@ -1,63 +1,87 @@
 :root {
---gray: #656b74;
---objectclr: #B1B2B5;
---transsprnt: #00000000;
-}
-
-body {
-    background: var(--gray);
-    margin: 0 7vw;
-}
-
-header {
-    height: 40px;
-}
-
-.nav-link {
-    text-align: justify;
-    text-justify: auto;
-    color: black;
-    text-decoration: none; 
-}
-
-section {
-    margin: 20px 0;
-    height: 600px;
-    overflow-x: auto;
-}
-
-.page-title {
-    font-size: 40px;
-    text-align: center;
-}
-
-.section-title {
-    font-size: 30px;
-}
-
-.artistoftheday {
-    background-color: var(--objectclr);
-    height: 400px;
-}
-
-.art-preview {
-    display: inline-block;
-    background-color: var(--objectclr);
-    height: 200px;
-    width: 350px;
-}
-
-.artist-preview {
-    display: inline-block;
-    margin: 0 25px;
-    background-color: var(--objectclr);
-    height: 200px;
-    width: 200px;
-    border-radius: 25%;
-}
-
-footer {
-    height: 350px;
-    background-color: var(--objectclr);
-}
-
+    --gray: #656b74;
+    --objectclr: #B1B2B5;
+    --transsprnt: #00000000;
+    }
+    
+    body {
+        background: var(--gray);
+    }
+    
+    header {
+        display: flex;
+        height: 40px;
+        padding: 0 7vw;
+        justify-content: space-between;
+    }
+    
+    .nav-link {
+        display: inline-block;
+        color: black;
+        text-decoration: none; 
+    }
+    
+    #center, .content {
+        margin: 0 7vw;
+    }
+    
+    section {
+        margin: 20px 0;
+        height: 500px;
+        width: 100%;
+        align-items: center;
+        overflow-x: auto;
+    }
+    
+    .page-title {
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .section-title {
+        font-size: 34px;
+    }
+    
+    .featured-artist {
+        display: inline-block;
+        background-color: var(--objectclr);
+        height: 320px;
+        width: 320px;
+    }
+    
+    .featured-art {
+        display: inline-block;
+        background-color: var(--objectclr);
+        height: 320px;
+        width: 650px;
+    }
+    
+    .other-featured-art {
+        display: block;
+        height: 50px;
+        width: 50px;
+    }
+    
+    .art-preview {
+        margin: 20px;
+        display: inline-block;
+        background-color: var(--objectclr);
+        height: 200px;
+        width: 350px;
+    }
+    
+    .artist-preview {
+        display: inline-block;
+        margin: 20px 45px;
+        background-color: var(--objectclr);
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+    
+    footer {
+        height: 350px;
+        background-color: var(--objectclr);
+    }
+    
+    
