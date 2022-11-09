@@ -13,6 +13,13 @@ header {
     height: 40px;
 }
 
+.nav-link {
+    text-align: center;
+    text-justify: distribute;
+    color: black;
+    text-decoration: none; 
+}
+
 section {
     margin: 20px 0;
     height: 600px;
