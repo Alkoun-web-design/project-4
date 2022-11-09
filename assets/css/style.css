@@ -1,9 +1,11 @@
-$gray: #4d4f52;
-$objectclr: #B1B2B5;
-$transsprnt: #00000000;
+root {
+--gray: #4d4f52;
+--objectclr: #B1B2B5;
+--transsprnt: #00000000;
+}
 
 body {
-    background: $gray;
+    background: var(--gray);
     margin: 0 7vw;
 }
 
@@ -24,25 +26,26 @@ section {
 }
 
 .artistoftheday {
-    background-color: $objectclr;
+    background-color: var(--objectclr);
     height: 400px;
 }
 
 .art-preview {
     display: inline-block;
-    background-color: $objectclr;
+    background-color: var(--objectclr);
     height: 200px;
     width: 350px;
 }
 
 .artist-preview {
     display: inline-block;
-    background-color: $objectclr;
+    background-color: var(--objectclr);
     height: 200px;
     border-radius: 2em;
 }
 
 footer {
     height: 350px;
+    background-color: var(--objectclr);
 }
 
