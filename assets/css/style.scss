@@ -8,18 +8,29 @@ body {
 }
 
 header {
-
+    height: 10vh;
 }
 
-.herosection {
+section {
+    height: 600px;
+}
 
+.sectiom-title {
+    font:;
 }
 
 .artistoftheday {
     background-color: $objectclrS;
+    height: 400px;
+}
+
+.art-preview, .artist-preview {
+    background-color: $objectclr;
+    height: 200px;
+    width: 350px;
 }
 
 footer {
-
+    height: 35vh;
 }
 
