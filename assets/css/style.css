@@ -14,7 +14,7 @@ header {
 }
 
 .nav-link {
-    text-align: center;
+    justify-content: center;
     text-justify: distribute;
     color: black;
     text-decoration: none; 
@@ -28,7 +28,7 @@ section {
 
 .page-title {
     font-size: 40px;
-    text-justify: center;
+    text-align: center;
 }
 
 .section-title {
