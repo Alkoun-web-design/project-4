@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    height: 10vh;
+    height: 200px;
 }
 
 section {
@@ -22,7 +22,7 @@ section {
     font-size: 40px;
 }
 
-.sectiom-title {
+.section-title {
     font-size: 30px;
 }
 
