@@ -16,7 +16,7 @@ header {
 section {
     margin: 20px 0;
     height: 600px;
-    overflow-y: auto;
+    overflow-x: auto;
 }
 
 .page-title {
@@ -42,6 +42,7 @@ section {
 
 .artist-preview {
     display: inline-block;
+    margin: 0 25px;
     background-color: var(--objectclr);
     height: 200px;
     width: 200px;
