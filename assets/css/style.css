@@ -16,6 +16,7 @@ header {
 section {
     margin: 20px 0;
     height: 600px;
+    overflow-y: auto;
 }
 
 .page-title {
