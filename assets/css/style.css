@@ -2,7 +2,7 @@
     --gray: #656b74;
     --objectclr: #B1B2B5;
     --transsprnt: #00000000;
-    --elemnet-shadow: 2px 2px 7px 7px rgb(78, 78, 78);
+    --element-shadow: 2px 2px 7px 7px rgb(78, 78, 78);
     }
     
     body {
@@ -18,7 +18,7 @@
     }
     
     .nav-link {
-        display: inline-block;
+        display: inline-flex;
         color: black;
         text-decoration: none; 
     }
@@ -75,7 +75,7 @@
         margin: 20px;
         min-width: 250px;
         border-radius: 10px;
-        box-shadow: var(--elemnet-shadow);
+        box-shadow: var(--element-shadow);
     }
     
     section {
