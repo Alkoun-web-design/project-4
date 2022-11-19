@@ -42,7 +42,6 @@
         display: inline-block;
         background-color: var(--objectclr);
         height: 320px;
-        width: 320px;
         margin: 20px;
         border-radius: 10px;
         box-shadow: var(--elemnet-shadow);
@@ -52,7 +51,6 @@
         display: inline-block;
         background-color: var(--objectclr);
         height: 320px;
-        width: 650px;
         margin: 20px;
         border-radius: 10px;
         box-shadow: var(--elemnet-shadow);
