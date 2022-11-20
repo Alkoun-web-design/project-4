@@ -2,7 +2,7 @@
     --gray: #656b74;
     --objectclr: #B1B2B5;
     --transsprnt: #00000000;
-    --element-shadow: 2px 2px 7px 7px rgb(78, 78, 78);
+    --element-shadow: 2px 2px 7px 7px rgb(88, 88, 88);
     }
     
     body {
@@ -10,17 +10,30 @@
     }
     
     header {
-        display: block;
+        display: flex;
         height: 50px;
-        padding: 0 7vw;
+        padding: 0 5vw;
         justify-items: center;
         align-items: center;
     }
-    
+
     .nav-link {
         display: inline-flex;
         color: black;
         text-decoration: none; 
+        margin: 1.25vw;
+    }
+
+    .search input[type=text] {
+        width: 250px;
+        height:25px;
+        border-radius:25px;
+        border: none;
+    }
+
+    .search {
+        display: inline-flex;
+        margin: 1.25vw 0 1.25vw auto
     }
     
     .center-container {
@@ -28,7 +41,7 @@
     }
     
     #center, header {
-        margin: 0 7vw;
+        margin: 0 5vw;
         align-items: center;
         justify-items: center;
     }
@@ -41,17 +54,21 @@
     .featured-artist {
         display: inline-block;
         background-color: var(--objectclr);
+        width: 27.25vw;
         height: 320px;
+        margin: 1.25vw;
         border-radius: 10px;
-        box-shadow: var(--elemnet-shadow);
+        box-shadow: var(--element-shadow);
     }
     
     .featured-art {
         display: inline-block;
         background-color: var(--objectclr);
+        width: 57.25vw;
         height: 320px;
         border-radius: 10px;
-        box-shadow: var(--elemnet-shadow);
+        margin: 1.25vw;
+        box-shadow: var(--element-shadow);
     }
     
     .other-featured-art-container {
@@ -67,7 +84,9 @@
         display: inline-block;
         background-color: var(--objectclr);
         height: 150px;
-        min-width: 250px;
+        width: 27.5vw;
+        min-width: 27.5vw;
+        margin: 1.25vw;
         border-radius: 10px;
         box-shadow: var(--element-shadow);
     }
@@ -95,25 +114,14 @@
     }
     
     .preview {
-        margin: 20px;
         display: inline-block;
         background-color: var(--objectclr);
         height: 250px;
-        width: 450px;
-        min-width: 450px;
+        width: 27.5vw;
+        min-width: 27.5vw;
+        margin: 1.25vw;
         border-radius: 10px;
-        box-shadow: var(--elemnet-shadow);
-    }
-    
-    .artist-preview {
-        display: inline-block;
-        margin: 20px 45px;
-        background-color: var(--objectclr);
-        height: 200px;
-        width: 200px;
-        min-width: 200px;
-        border-radius: 10px;
-        box-shadow: var(--elemnet-shadow);
+        box-shadow: var(--element-shadow);
     }
     
     .about-me {
@@ -123,26 +131,36 @@
         width: 660px;
         margin: 20px;
         border-radius: 10px;
-        box-shadow: var(--elemnet-shadow);
+        box-shadow: var(--element-shadow);
     }
     
     footer {
-        padding: 0 7vw;
+        padding: 0 5vw;
         height: 350px;
         background-color: var(--objectclr);
     }
     
-/*// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+@media (min-width: 576px) {
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
+}
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... }
 
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) { ... }
+@media (min-width: 768px) {
+
+}
+
+
+@media (min-width: 992px) {
+
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+
+@media (min-width: 1400px) {
+
+}
