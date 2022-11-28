@@ -4,6 +4,7 @@
     --transsprnt: #00000000;
     --element-shadow: 2px 2px 7px 7px rgb(88, 88, 88);
     --contentclr: #212a42;
+    --brdr-rds: 8px;
     }
     
     @import url('https://fonts.googleapis.com/css?family=Quicksand:400,600');
@@ -50,7 +51,7 @@
     
     header {
         display: flex;
-        height: 50px;
+        height: 48px;
         padding: 0 5vw;
         justify-items: center;
         align-items: center;
@@ -80,59 +81,32 @@
         margin: 1rem auto;
     }
     
-    #center, header {
+    #center {
         margin: 0 5vw;
         align-items: center;
         justify-items: center;
     }
     
-    
-    #artist-today {
-        height: 700px;
-    }
-    
     .featured-artist {
         display: inline-block;
         background-color: var(--objectclr);
-        width: 27.25vw;
-        height: 320px;
-        margin: 1.25vw;
-        border-radius: 10px;
+        width: 768px;
+        height: 368px;
+        border-radius: var(--brdr-rds);
+        margin: 16px;
         box-shadow: var(--element-shadow);
     }
     
-    .featured-art {
-        display: inline-block;
-        background-color: var(--objectclr);
-        width: 57.25vw;
-        height: 320px;
-        border-radius: 10px;
-        margin: 1.25vw;
-        box-shadow: var(--element-shadow);
-    }
-    
-    .other-featured-art-container {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        overflow-y: hidden;
-        height: 180px;
-        max-height: 180px;
-    }
-    
-    .other-featured-art {
-        display: inline-block;
-        background-color: var(--objectclr);
-        height: 150px;
-        width: 27.5vw;
-        min-width: 27.5vw;
-        margin: 1.25vw;
-        border-radius: 10px;
-        box-shadow: var(--element-shadow);
+    .art-collection {
+        margin: 160px 0;
     }
     
     section {
-        margin: 100px 0;
+        margin: 160px 0;
+    }
+
+    .first-section {
+        margin-top: 80px;
     }
     
     .scroll-container {
@@ -140,8 +114,8 @@
         align-items: center;
         width: 100%;
         overflow-y: hidden;
-        height: 300px;
-        max-height: 300px;
+        height: 432px;
+        max-height: 432px;
     }
     
     .page-title {
@@ -151,11 +125,30 @@
     .preview {
         display: inline-block;
         background-color: var(--objectclr);
-        height: 250px;
-        width: 400x;
-        min-width: 400px;
+        width: 384px;
+        min-width: 384px;        
+        height: 240px;
         margin: 16px;
-        border-radius: 16px;
+        border-radius: var(--brdr-rds);
+        box-shadow: var(--element-shadow);
+    }
+
+    .preview-art {
+        background-color: var(--contentclr);
+        height: 224px;
+        width: 368px;
+        margin: 8px auto;
+        border-radius: var(--brdr-rds);
+    }
+
+    .preview-name {
+        display: block;
+        background-color: var(--contentclr);
+        height: 64px;
+        width: 240px;
+        padding: 8px;
+        margin: 16px auto;
+        border-radius: 8px;
         box-shadow: var(--element-shadow);
     }
     
@@ -164,9 +157,9 @@
         align-items: center;
         background-color: var(--objectclr);
         height: fit-content;
-        width: 900px;
-        margin: 100px auto;
-        border-radius: 16px;
+        width: 100%;
+        margin: 48px auto;
+        border-radius: var(--brdr-rds);
         box-shadow: var(--element-shadow);
     }
 
@@ -181,7 +174,7 @@
     }
 
     .painting-row {
-        display: inline-flex
+        display: inline-flex;
     }
     
     footer {
