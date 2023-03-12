@@ -61,13 +61,15 @@
     
     body {
       background: white;
-      font-family: 'Quicksand', sans-serif;
-      font-weight: 400;
       line-height: 1.75;
       color: #050505;
     }
     
-    p {margin-bottom: 1rem;}
+    p {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
     
     h1, h2, h3, h4, h5 {
       margin: 3rem 0 1.38rem;
