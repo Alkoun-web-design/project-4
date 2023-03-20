@@ -1,20 +1,23 @@
 :root {
-    --gray: #656b74;
-    --objectclr: #B1B2B5;
+    --wall: rgb(164, 164, 164);
+    --objectclr: #ffffff;
     --transsprnt: #00000000;
-    --element-shadow: 2px 2px 7px 7px rgb(88, 88, 88);
+    --art-shadow: 0px 5px 3px 0px rgba(0, 0, 0, 0.771);
+    --placard-bg: radial-gradient(circle, rgba(246,246,246,1) 37%, rgba(203,203,203,1) 100%);
+    --placard-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.771);
+    --spotlight: 0px 0px 40px 20px rgb(255, 255, 255);
     --contentclr: #212a42;
     --brdr-rds: 8px;
     }
+
     
-/* quicksand-300 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 300;
-  src: url('./assets/fonts/quicksand-v30-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('./assets/fonts/quicksand-v30-latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/quicksand-v30-latin-300.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/quicksand-v30-latin-300.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* quicksand-regular - latin */
@@ -23,8 +26,8 @@
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 400;
-  src: url('./assets/fonts/quicksand-v30-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('./assets/fonts/quicksand-v30-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/quicksand-v30-latin-regular.woff') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/quicksand-v30-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* quicksand-500 - latin */
@@ -33,8 +36,8 @@
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 500;
-  src: url('./assets/fonts/quicksand-v30-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('./assets/fonts/quicksand-v30-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/quicksand-v30-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/fonts/quicksand-v30-latin-500.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* quicksand-600 - latin */
@@ -43,8 +46,8 @@
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 600;
-  src: url('./assets/fonts/quicksand-v30-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('./assets/fonts/quicksand-v30-latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/quicksand-v30-latin-600.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/quicksand-v30-latin-600.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* quicksand-700 - latin */
@@ -53,29 +56,26 @@
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 700;
-  src: url('./assets/fonts/quicksand-v30-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
-       url('./assets/fonts/quicksand-v30-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: url('../fonts/quicksand-v30-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('../fonts/quicksand-v30-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
     html {font-size: 100%;} /*16px*/
-    
+
     body {
-      background: white;
+      background: var(--wall);
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 400;
       line-height: 1.75;
-      color: #050505;
+      color: #1c1c1c;
     }
     
-    p {
-        font-family: 'Quicksand', sans-serif;
-        font-weight: 400;
-        margin-bottom: 1rem;
-    }
+    p {margin-bottom: 0.1rem;}
     
     h1, h2, h3, h4, h5 {
-      margin: 3rem 0 1.38rem;
-      font-family: 'Quicksand', sans-serif;
+      margin: 0.5rem 0 0.5rem;
       font-weight: 600;
-      line-height: 1.3;
+      line-height: 1;
     }
     
     h1 {
@@ -94,22 +94,19 @@
     small, .text_small {font-size: 0.8rem;}
 
 
-
-    body {
-        background: var(--gray);
-    }
     
     header {
+        background:rgba(22, 22, 22, 0.13);
         display: flex;
-        height: 80px;
-        padding: 0 5vw;
-        justify-items: center;
-        align-items: center;
+        height: auto;
+        padding: 0 9vw;
+        justify-content: start;
+        align-content: center;
     }
 
     .nav-link {
         display: inline-flex;
-        color: black;
+        color: rgb(22, 22, 22);
         text-decoration: none; 
         margin: 1.25vw;
     }
@@ -123,37 +120,35 @@
 
     .search {
         display: inline-flex;
-        margin: 1.25vw 0 1.25vw auto
+        margin: 1.25vw 0 1.25vw auto;
+
     }
     
     .center-container {
-        margin: 1rem auto;
+        margin: 0.25rem auto;
     }
     
     #center {
-        margin: 0 5vw;
-        align-items: center;
-        justify-items: center;
     }
     
     .featured-artist {
         justify-items: center;
         align-items: center;
-        background-color: var(--objectclr);
+        background: var(--placard-bg);
         height: fit-content;
-        width: 100%;
-        padding: 32px;
+        width: 80%;
+        padding: 16px;
         margin: 48px auto;
         border-radius: var(--brdr-rds);
         box-shadow: var(--element-shadow);
     }
-    
-    .art-collection {
-        margin: 160px 0;
+
+    .featured-artist h3 {
+        text-align: center;
     }
     
     section {
-        margin: 160px 0;
+        margin: 80px 0;
     }
 
     .first-section {
@@ -162,47 +157,121 @@
     
     .scroll-container {
         display: flex;
-        align-items: center;
+        align-items: start;
         width: 100%;
         overflow-y: hidden;
-        height: 432px;
-        max-height: 432px;
+        height: 528px;
+        max-height: 528px;
     }
     
     .page-title, .section-title, .title {
         text-align: center;
     }
 
+    .preview-bg {
+        background: radial-gradient(circle, rgba(233,233,233,1) 57%, rgba(105,106,125,0) 67%);       
+        padding: 80px 48px;
+    }
+
     .preview {
         display: inline-block;
-        background-color: var(--objectclr);
-        width: 384px;
-        min-width: 384px;        
-        height: 240px;
+        text-align: center;
+        width: 416px;
+        min-width: 416px;        
+        height: 304px;
         margin: 16px;
-        border-radius: var(--brdr-rds);
-        box-shadow: var(--element-shadow);
     }
 
-    .preview-art {
-        background-color: var(--contentclr);
-        height: 224px;
-        width: 368px;
-        margin: 8px auto;
-        border-radius: var(--brdr-rds);
+    .preview-artwork {
+        object-fit: contain;
+        margin: auto;
+        max-height: 100%;
+        height: auto;
+        max-width: 100%;
+        width: auto; 
+        box-shadow: var(--art-shadow);
     }
 
-    .preview-name {
-        display: block;
-        background-color: var(--contentclr);
-        height: 64px;
-        width: 240px;
-        padding: 8px;
+    .large-artwork {
+        position: absolute;
+        z-index: 1;
+    }
+
+    .preview-placard {
+        background: var(--placard-bg);
+        display: flex;
+        flex-direction: row;
+        height: 96px;
+        width: 288px;
         margin: 16px auto;
-        border-radius: 8px;
-        box-shadow: var(--element-shadow);
+        align-content: center;
+        justify-content: center;
+        box-shadow: var(--placard-shadow);
+    }
+
+    .flex-col {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+    }
+
+    .preview-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+
+    .preview-artist-name {
+        font-size: 0.9rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+    }
+
+    .artist-card {
+        background: var(--placard-bg);
+        padding: 8px;
+        margin: 8px;
+        max-width: 100%;
+        width: auto; 
+        box-shadow: var(--art-shadow);
+    }
+
+    .art-collection {
+        margin: 160px 0;
+    }
+
+    .art-collection-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-rows: auto;
+        align-items: center;
     }
     
+    .grid-bg {
+        background: radial-gradient(circle, rgba(233,233,233,1) 57%, rgba(105,106,125,0) 67%);       
+        padding: 56px;
+        
+    }
+
+    .grid-preview {
+        display: inline-block;
+        text-align: center;
+        margin: auto;
+        width: 100%;       
+        height: 100%;   
+    }
+
+    .grid-artwork {
+        object-fit: contain;
+        margin: auto;
+        max-height: 100%;
+        height: auto;
+        max-width: 100%;
+        width: auto; 
+        box-shadow: var(--art-shadow);
+    }
+
     .about-me {
         justify-items: center;
         align-items: center;
@@ -215,14 +284,24 @@
         box-shadow: var(--element-shadow);
     }
 
+    .artist-img-md {
+        display: flex;
+        justify-items: center;
+        height: 5rem;
+        width: 5rem;
+        margin: auto;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
     .artist-img-lg {
         display: flex;
         justify-items: center;
         height: 10rem;
         width: 10rem;
-        margin: 16px;
+        margin: auto;
         border-radius: 50%;
-        background: var(--contentclr);
+        object-fit: cover;
     }
 
     .artist-img-xl {
@@ -230,13 +309,9 @@
         justify-items: center;
         height: 240px;
         width: 240px;
-        margin: 16px;
+        margin: auto;
         border-radius: 50%;
-        background: var(--contentclr);
-    }
-
-    .painting-row {
-        display: inline-flex;
+        object-fit: cover;
     }
     
     footer {
